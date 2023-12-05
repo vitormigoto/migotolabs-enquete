@@ -1,0 +1,23 @@
+
+.buttonClick{    
+    padding: 12px 24px 12px 24px;
+    background-color: #3753B4;
+    border-radius: 8px;
+    border:0px;
+    width: 100vw;
+    height:50px;
+    margin: 5px 0px 5px 0px;
+    cursor: pointer;
+    
+}
+
+.buttonClick:hover{
+    background-color: #3752b4c5;
+    text-decoration: none !important
+    
+}
+
+.linkButton{
+    display: flex;
+    text-decoration: none;
+}

@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './button.module.css';
+import Link from 'next/link';
 
 type ButtonProps = {
     title: string;
@@ -8,11 +9,13 @@ type ButtonProps = {
 
 
 const Button: React.FC<ButtonProps> = ({ title, source }) => {
+    
     return (
-        <footer className={styles.footer}>
-            <hr/>
-            <p>Desenvolvido por Vitor Migoto - 2023</p>
-        </footer>
+        <Link href={source} passHref className={styles.linkButton}>
+            <button className={styles.buttonClick}>
+                {title}
+            </button>
+        </Link>
     );
 };
 
